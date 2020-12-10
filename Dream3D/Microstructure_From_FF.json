@@ -1,5 +1,5 @@
 {
-    "00": {
+    "0": {
         "CellEnsembleAttributeMatrixName": "CellEnsembleData",
         "CrystalStructuresArrayName": "CrystalStructures",
         "Filter_Enabled": true,
@@ -76439,7 +76439,7 @@
         "StatsDataArrayName": "Statistics",
         "StatsGeneratorDataContainerName": "StatsGeneratorDataContainer"
     },
-    "01": {
+    "1": {
         "BoxDimensions": "X Range: 0 to 1100 (Delta: 1100)\nY Range: 0 to 165 (Delta: 165)\nZ Range: 0 to 1100 (Delta: 1100)",
         "CellAttributeMatrixName": "CellData",
         "DataContainerName": "SyntheticVolumeDataContainer",
@@ -76450,7 +76450,7 @@
         },
         "EnsembleAttributeMatrixName": "CellEnsembleData",
         "EstimateNumberOfFeatures": 1,
-        "EstimatedPrimaryFeatures": "475572",
+        "EstimatedPrimaryFeatures": "474537",
         "FilterVersion": "6.5.138",
         "Filter_Enabled": true,
         "Filter_Human_Label": "Initialize Synthetic Volume",
@@ -76477,7 +76477,7 @@
             "z": 1
         }
     },
-    "02": {
+    "2": {
         "FilterVersion": "6.5.138",
         "Filter_Enabled": true,
         "Filter_Human_Label": "Establish Shape Types",
@@ -76494,7 +76494,7 @@
         ],
         "ShapeTypesArrayName": "ShapeTypes"
     },
-    "03": {
+    "3": {
         "CellPhasesArrayName": "Phases",
         "FeatureGeneration": 1,
         "FeatureIdsArrayName": "FeatureIds",
@@ -76552,7 +76552,7 @@
         },
         "UseMask": 0
     },
-    "04": {
+    "4": {
         "CellAttributeMatrixName": {
             "Attribute Matrix Name": "CellData",
             "Data Array Name": "",
@@ -76578,52 +76578,7 @@
         "InputFile": "/Users/rachellim/Documents/Research/CHESS_Feb20/microstructure/CMU-1_Eulers_for_Dream3d_large.txt",
         "RenumberFeatures": 0
     },
-    "05": {
-        "FeatureIdsArrayPath": {
-            "Attribute Matrix Name": "CellData",
-            "Data Array Name": "FeatureIds",
-            "Data Container Name": "SyntheticVolumeDataContainer"
-        },
-        "FilterVersion": "1.0.89",
-        "Filter_Enabled": false,
-        "Filter_Human_Label": "Potts Model",
-        "Filter_Name": "PottsModel",
-        "Filter_Uuid": "{e15ec84b-1e02-53a6-a830-59e0813775a1}",
-        "Iterations": 5,
-        "MaskArrayPath": {
-            "Attribute Matrix Name": "CellData",
-            "Data Array Name": "Mask",
-            "Data Container Name": "ImageDataContainer"
-        },
-        "PeriodicBoundaries": 0,
-        "Temperature": 300,
-        "UseMask": 0
-    },
-    "06": {
-        "BoundaryCellsArrayName": "BoundaryCells",
-        "CellFeatureAttributeMatrixPath": {
-            "Attribute Matrix Name": "CellFeatureData",
-            "Data Array Name": "",
-            "Data Container Name": "SyntheticVolumeDataContainer"
-        },
-        "FeatureIdsArrayPath": {
-            "Attribute Matrix Name": "CellData",
-            "Data Array Name": "FeatureIds",
-            "Data Container Name": "SyntheticVolumeDataContainer"
-        },
-        "FilterVersion": "6.5.138",
-        "Filter_Enabled": false,
-        "Filter_Human_Label": "Find Feature Neighbors",
-        "Filter_Name": "FindNeighbors",
-        "Filter_Uuid": "{97cf66f8-7a9b-5ec2-83eb-f8c4c8a17bac}",
-        "NeighborListArrayName": "NeighborList",
-        "NumNeighborsArrayName": "NumNeighbors",
-        "SharedSurfaceAreaListArrayName": "SharedSurfaceAreaList",
-        "StoreBoundaryCells": 0,
-        "StoreSurfaceFeatures": 1,
-        "SurfaceFeaturesArrayName": "SurfaceFeatures"
-    },
-    "07": {
+    "5": {
         "CellAttributeMatrixPath": {
             "Attribute Matrix Name": "CellData",
             "Data Array Name": "",
@@ -76657,7 +76612,7 @@
         "ZMax": 1049,
         "ZMin": 50
     },
-    "08": {
+    "6": {
         "CellEulerAnglesArrayPath": {
             "Attribute Matrix Name": "CellData",
             "Data Array Name": "EulerAngles",
@@ -76691,7 +76646,7 @@
         },
         "UseGoodVoxels": 0
     },
-    "09": {
+    "7": {
         "CellEulerAnglesArrayPath": {
             "Attribute Matrix Name": "CellData",
             "Data Array Name": "EulerAngles",
@@ -76714,7 +76669,7 @@
         "Filter_Uuid": "{b6b1ba7c-14aa-5c6f-9436-8c46face6053}",
         "OutputFile": "/Users/rachellim/Documents/Research/CHESS_Feb20/microstructure/MASSIF_Microstructure.dream3d"
     },
-    "10": {
+    "8": {
         "FilterVersion": "1.2.812",
         "Filter_Enabled": true,
         "Filter_Human_Label": "Write DREAM.3D Data File",
@@ -76726,7 +76681,7 @@
     },
     "PipelineBuilder": {
         "Name": "Microstructure_From_FF",
-        "Number_Filters": 11,
+        "Number_Filters": 9,
         "Version": 6
     }
 }

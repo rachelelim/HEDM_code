@@ -1,11 +1,12 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Sat Jun  9 17:19:53 2018
 
 @author: rachellim
 
-Makes input files for building a synthetic microstructure in Dream3D from FF data
+Makes input files for building a synthetic microstructure in Dream3D from FF data.
+Assumes a square cross-section and equiaxed ellipsoidal grains.
 """
 
 import numpy as np
@@ -27,7 +28,7 @@ COM = data[good_grains,6:9][0]*1000
 
 #adjusts the origin from the center of the sample (FF) to corner (Dream3D)
 x = COM[:,0] + (1000 *lower)
-y = COM[:,1] + (1000 * 82_y)
+y = COM[:,1] + (1000 * lower_y)
 z = COM[:,2] + (1000 * lower)
 
 centroids = np.stack([x,y,z]).T
@@ -53,4 +54,4 @@ matched_grains = np.hstack([data[good_grains,0].T,grainIDs])
 
 np.savetxt(filepath + '/Eulers_for_Dream3d_large.txt',Euler_out,fmt = '%d\t%d\t%0.4f\t%0.4f\t%0.4f', header='%d' %len(centroids))
 np.savetxt(filepath + '/for_Dream3D_large.txt',out,fmt = '%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t', header='%d' %len(centroids))
-np.savetxt(filepath + '/matched_grains_CMU-1_Dream3d_large.txt',matched_grains,fmt='%d',delimiter='\t',header = 'newID \t oldID')
+np.savetxt(filepath + '/matched_grains_Dream3d_large.txt',matched_grains,fmt='%d',delimiter='\t',header = 'oldID \t newID')

@@ -1,11 +1,12 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 13 19:37:35 2020
 
 @author: rachellim
 
-Calculates Euler angles from grains.out file for input into FFtoDream3D.py
+Calculates Euler angles from grains.out file.
+Can be used as direct input for FFtoDream3D.py
 """
 
 from hexrd import rotations as rot
