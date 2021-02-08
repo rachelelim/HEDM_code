@@ -1,0 +1,29 @@
+beam:
+  energy: 61.332
+  vector: {azimuth: 90.0, polar_angle: 90.0}
+calibration_crystal:
+  grain_id: 0
+  inv_stretch: [1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+  orientation: [0.0, 0.0, 0.0]
+  position: [0.0, 0.0, 0.0]
+detectors:
+  2M:
+    pixels:
+      columns: 1475
+      rows: 1679
+      size: [0.172, 0.172]
+    transform:
+      translation:
+      - 0.0
+      - 0.0
+      - -700.00
+      tilt:
+      - 0.0
+      - 0.0
+      - 0.0
+oscillation_stage:
+  chi: 0.0
+  translation:
+  - 0.0
+  - 0.0
+  - 0.0
