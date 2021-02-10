@@ -1,0 +1,38 @@
+1.	Use GUI to align CeO2 pattern to get approximate x, y, and z location of
+    detectors.
+
+2.	Save detector config file.
+
+3.	Use preprocess_dex.py to create imageseries for dual dexela setup.
+    - Note: calls chess.py so you need to make sure that’s in the same folder!
+    - Note 2: Currently hardcoded for the 360 degree, 0.25 degree step size case
+
+4.	Copy detector config to a new file. This is to make sure you have the
+    original powder calibration in case you need it later.
+
+5.  Make sure this block exists in the instrument config with "distortion" at
+    the same indentation level as "buffer" and "pixels".
+
+distortion:
+  function_name: Dexela_2923
+  parameters:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+
+
+6.	Find orientations and fit grains using CLI. Use a tth_width of 0.35 or
+    something similar. It needs to be larger than usual since this is the first
+    full calibration step.
+
+7.	Use calibrate_instrument_from_rotation_series.py using one or more of the
+    ruby grains (line 54).
+
+8.	Find orientations and fit grains again using CLI with the re-calibrated
+    detector.
+    - Note: Can now use a smaller tth width.
